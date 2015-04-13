@@ -48,7 +48,7 @@ x <- strptime(paste(data$Date,data$Time,sep = " "), "%d/%m/%Y %H:%M:%S")
 sm1 <- data$Sub_metering_1
 sm2 <- data$Sub_metering_2
 sm3  <- data$Sub_metering_3
-plot(x,sm1,'l',ylab="Energy sub metering",col="black")
+plot(x,sm1,'l',ylab="Energy sub metering",xlab="",col="black")
 lines(x,sm2,'l',col="red")
 lines(x,sm3,'l',col="blue")
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),col=c("black","red","blue"),lty=1,bty="n")
